@@ -32,7 +32,7 @@
       <![endif]-->
    </head>
    <body class="主页">
-      <div class="wrap">
+      <div class="wrap" id="main_top">
          <!-- Header Start -->
          <header id="header">
             <!-- Header Top Bar Start -->
@@ -90,8 +90,8 @@
                   <!-- Menu Start -->
                   <nav class="collapse navbar-collapse menu">
                      <ul class="nav navbar-nav sf-menu">
-                        <li>
-                           <a id="current" href={{tag5|default:'./'}}>
+                        <li data-slide="1">
+                           <a href="#main_top" class="sf-with-ul">
                            {{tag6|default:'主页'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
@@ -101,8 +101,8 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#" class="sf-with-ul">
-                           {{tag7|default:'Features'}} 
+                           <a href="#course" class="sf-with-ul">
+                           {{tag7|default:'课程'}} 
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -111,8 +111,8 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#" class="sf-with-ul">
-                           {{tag8|default:'Pages'}}
+                           <a href="#project" class="sf-with-ul">
+                           {{tag8|default:'项目'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -121,8 +121,8 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#" class="sf-with-ul">
-                           {{tag9|default:'Portfolio'}}
+                           <a href="#coursedetail" class="sf-with-ul">
+                           {{tag9|default:'课程详情'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -131,8 +131,8 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#" class="sf-with-ul">
-                           {{tag10|default:'Blog'}}
+                           <a href="#jobs" class="sf-with-ul">
+                           {{tag10|default:'就业单位'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -151,7 +151,7 @@
          <!-- Content Start -->
          <div id="main">
             <!-- Slider Start-->
-            <div class="fullwidthbanner-container">
+            <div class="fullwidthbanner-container" data-slide="1" id="slide1">
                <div class="fullwidthbanner rslider">
                   <ul>
                      <!-- THE FIRST SLIDE -->
@@ -327,7 +327,7 @@
             </div>
             <!-- Slider End--> 
             <!-- Slogan Start-->
-            <div class="slogan bottom-pad-small">
+            <div class="slogan bottom-pad-small" id='course'>
                <div class="container">
                   <div class="row">
                      <div class="slogan-content">
@@ -462,7 +462,8 @@
             </div>
             <!-- Main Content end--> 
             <!-- Recent works start-->
-            <div class="recentworks bottom-pad">
+            <div class="slogan bottom-pad-small" id='project'></div>
+            <div class="recentworks bottom-pad" >
                <div class="container">
                   <div class="row">
                      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 animate_afl d1">
@@ -484,7 +485,7 @@
                                  <div class="item active">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d2">
                                        <div class="portfolio-item">
-                                          <a href={{tagimg121|default:'/static/img/portfolio-1.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
+                                          <a href={{tegimg121|default:'/static/img/portfolio-1.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
                                           <span class="portfolio-item-hover"></span>
                                           <span class="fullscreen"><i class="icon-search"></i></span><img src={{tagimg122|default:'/static/img/xiangmu1.png'}} alt=" "/>
                                           </a>
@@ -579,7 +580,8 @@
                </div>
             </div>
             <!-- Recent work end-->
-            <!-- Features start -->  
+            <!-- Features start --> 
+            <div class="slogan bottom-pad-small" id='coursedetail'></div>
             <div class="features bottom-pad">
                <div class="container">
                   <div class="row">
@@ -797,7 +799,8 @@
             </div>
             <!-- Latest Posts End -->
             <!-- Our Clients Start-->
-            <div class="our-clients">
+            <div class="slogan bottom-pad-small" id='jobs'></div>
+            <div class="our-clients" >
                <div class="container">
                   <div class="row">
                      <div class="client">
