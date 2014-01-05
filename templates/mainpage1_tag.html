@@ -5,7 +5,7 @@
 <!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
    <head>
       <meta charset="utf-8">
-      <title>Pmainpage</title>
+      <title>{{tag1|default:'Pmainpage'}}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -45,8 +45,8 @@
                <div class="slidedown collapse">
                   <div class="container">
                      <div class="phone-email pull-left">
-                        <a><i class="icon-phone"></i> Call Us : +86 18010096001</a>
-                        <a href="mailto@market@jeapedu.com"><i class="icon-envelope"></i> Email : market@jeapedu.com</a>
+                        <a><i class="icon-phone"></i> Call Us : {{tag2|default:'+86 18010096001'}}</a>
+                        <a href="mailto@{{tag3|default:'market@jeapedu.com'}}"><i class="icon-envelope"></i> Email : {{tag4|default:'market@jeapedu.com'}}</a>
                      </div>
                      <div class="pull-right">
                         <ul class="social pull-left">
@@ -80,7 +80,7 @@
                   <div class="logo pull-left">
                      <h1>
                         <a href="index.html">
-                        <img src="img/logo.png" alt="pixma" width="125" height="60">
+                        <img src="[{img/logo.png}]" alt="pixma" width="125" height="60">
                         </a>
                      </h1>
                   </div>
@@ -97,46 +97,27 @@
                      <ul class="nav navbar-nav sf-menu">
                         <li>
                            <a id="current" href="index.html">
-                           主页
+                           {{tag5|default:'主页'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
                            </a>
                            <ul>
-                              <li><a href="#" class="sf-with-ul">主页 2</a></li>
-                              <li><a href="#" class="sf-with-ul">主页 3</a></li>
-                              <li><a href="#" class="sf-with-ul">Nivo Slider</a></li>
                            </ul>
                         </li>
                         <li>
                            <a href="#" class="sf-with-ul">
-                           Features 
+                           {{tag6|default:'Features'}} 
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
                            </a>
                            <ul>
-                              <li><a href="#" class="sf-with-ul">Shortcodes</a></li>
-                              <li><a href="#" class="sf-with-ul">Icons</a></li>
-                              <li><a href="#" class="sf-with-ul">Pricing Tables</a></li>
-                              <li>
-                                 <a href="#" class="sf-with-ul"> 
-                                 Third Level Menu 
-                                 <span class="sf-sub-indicator pull-right">
-                                 <i class="icon-angle-right "></i>
-                                 </span>
-                                 </a>
-                                 <ul>
-                                    <li><a href="#" class="sf-with-ul">Menu Item</a></li>
-                                    <li><a href="#" class="sf-with-ul">Menu Item</a></li>
-                                    <li><a href="#" class="sf-with-ul">Menu Item</a></li>
-                                 </ul>
-                              </li>
                            </ul>
                         </li>
                         <li>
                            <a href="#" class="sf-with-ul">
-                           Pages
+                           {{tag7|default:'Pages'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -210,7 +191,7 @@
                            data-start="1000"
                            data-easing="easeOutQuint"
                            data-endeasing="easeOutQuint">
-                           <h3>{{tag1|default:'专注于精研技术，所以优秀，拿技术来说话！'}}</h3>
+                           <h3>{{tag8|default:'专注于精研技术，所以优秀，拿技术来说话！'}}</h3>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
                            data-easing="easeOutExpo" 
@@ -220,7 +201,7 @@
                            data-x="40">
                            <div class="list-slide">
                               <i class="icon-camera slide-icon"></i>
-                             <h5 class="dblue">{{tag2|default:'苹果总部工程师参与授课，中美十大名师'}}</h5>
+                             <h5 class="dblue">{{tag9|default:'苹果总部工程师参与授课，中美十大名师''}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -231,7 +212,7 @@
                            data-x="40">
                            <div class="list-slide">
                               <i class="icon-search slide-icon"></i>
-                              <h5 class="dblue">{{tag3|default:'课程体系全面升级至2.0'}}</h5>
+                              <h5 class="dblue">{{tag10|default:'课程体系全面升级至2.0'}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -242,7 +223,7 @@
                            data-x="40">
                            <div class="list-slide">
                               <i class="icon-code slide-icon"></i>
-                              <h5 class="dblue"> {{tag4|default:'免费试听一个月，零学费入学，就业后还款！'}}</h5>
+                              <h5 class="dblue"> {{tag11|default:'免费试听一个月，零学费入学，就业后还款！''}}</h5>
                            </div>
                         </div>
                         <div class="caption lfb caption_button_1 fadeout tp-caption start"
@@ -274,7 +255,7 @@
                            data-y="54"
                            data-speed="300"
                            data-start="800"
-                           data-easing="easeOutExpo"  >{{tag5|default:'合作企业定制项目教学，入学签订就业协议，'}}</div>
+                           data-easing="easeOutExpo"  >{{tag12|default:'合作企业定制项目教学，入学签订就业协议，'}}</div>
                         <div class="caption medium_text sfl"
                            data-x="689"
                            data-y="92"
@@ -286,7 +267,7 @@
                            data-y="88"
                            data-speed="300"
                            data-start="1100"
-                           data-easing="easeOutExpo"  ><span class="dblue">{[保障底薪、就业时间、终生就业跟踪指导]}</span></div>
+                           data-easing="easeOutExpo"  ><span class="dblue">{{tag13|default:'保障底薪、就业时间、终生就业跟踪指导'}}</span></div>
                         <div class="caption list_slide lfb tp-caption start" 
                            data-easing="easeOutExpo" 
                            data-start="1400" 

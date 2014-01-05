@@ -3,6 +3,11 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
+
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+import settings
+
+
 from .views import *
 urlpatterns = patterns('',
     # Examples:
@@ -15,4 +20,7 @@ urlpatterns = patterns('',
     url(r'^mainpageenglish/$', mainpageenglish),
     url(r'simple/$', simple),
     url(r'^simplechinese/$', simpleenglish),
+    url(r'^media/(?P<path>.*)$','django.views.static.serve',
+        {'document_root': settings.MEDIA_ROOT, 'show_indexes':True}),
+
 )
