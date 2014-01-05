@@ -5,14 +5,12 @@ import iosnew.settings
 
 from iosnew.models import TextInfo,ImgInfo
 
-
 import re
 import sys
 
 input_file = sys.argv[1]
 
 buf = open(input_file).read()
-
 
 all_text_tag = re.findall("\{\{(tag\d+?)\|default:'(.*?)'\}\}",buf,re.S)
 print "Text have %d" % len(all_text_tag)
