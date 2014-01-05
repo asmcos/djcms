@@ -5,7 +5,7 @@
 <!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
    <head>
       <meta charset="utf-8">
-      <title>{[Pmainpage]}</title>
+      <title>{{tag1|default:'Pmainpage'}}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -40,8 +40,8 @@
                <div class="slidedown collapse">
                   <div class="container">
                      <div class="phone-email pull-left">
-                        <a><i class="icon-phone"></i> Call Us : {[+86 18010096001]}</a>
-                        <a href="mailto@{[market@jeapedu.com]}"><i class="icon-envelope"></i> Email : {[market@jeapedu.com]}</a>
+                        <a><i class="icon-phone"></i> Call Us : {{tag2|default:'+86 18010096001'}}</a>
+                        <a href="mailto@{{tag3|default:'market@jeapedu.com'}}"><i class="icon-envelope"></i> Email : {{tag4|default:'market@jeapedu.com'}}</a>
                      </div>
                      <div class="pull-right">
                         <ul class="social pull-left">
@@ -75,7 +75,7 @@
                   <div class="logo pull-left">
                      <h1>
                         <a href="index.html">
-                        <img src="[{img/logo.png}]" alt="pixma" width="125" height="60">
+                        <img src="{{tagimg44|default:'img/logo.png'}}" alt="pixma" width="125" height="60">
                         </a>
                      </h1>
                   </div>
@@ -91,8 +91,8 @@
                   <nav class="collapse navbar-collapse menu">
                      <ul class="nav navbar-nav sf-menu">
                         <li>
-                           <a id="current" href={[index.html]}>
-                           {[主页]}
+                           <a id="current" href={{tag5|default:'index.html'}}>
+                           {{tag6|default:'主页'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -102,7 +102,7 @@
                         </li>
                         <li>
                            <a href="#" class="sf-with-ul">
-                           {[Features]} 
+                           {{tag7|default:'Features'}} 
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -112,7 +112,7 @@
                         </li>
                         <li>
                            <a href="#" class="sf-with-ul">
-                           {[Pages]}
+                           {{tag8|default:'Pages'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -122,7 +122,7 @@
                         </li>
                         <li>
                            <a href="#" class="sf-with-ul">
-                           {[Portfolio]}
+                           {{tag9|default:'Portfolio'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -132,7 +132,7 @@
                         </li>
                         <li>
                            <a href="#" class="sf-with-ul">
-                           {[Blog]}
+                           {{tag10|default:'Blog'}}
                            <span class="sf-sub-indicator">
                            <i class="icon-angle-down "></i>
                            </span>
@@ -156,7 +156,7 @@
                   <ul>
                      <!-- THE FIRST SLIDE -->
                      <li data-delay="6000" data-masterspeed="300" data-transition="fade">
-                        <div class="slotholder"><img src=[{/static/img/slider-bg-1.jpg}] data-fullwidthcentering="on" alt="Pixma"></div>
+                        <div class="slotholder"><img src={{tagimg45|default:'/static/img/slider-bg-1.jpg'}} data-fullwidthcentering="on" alt="Pixma"></div>
                         <div class="caption modern_big_bluebg h1 lft tp-caption start"
                            data-x="40"
                            data-y="85"
@@ -165,7 +165,7 @@
                            data-start="1000"
                            data-easing="easeOutQuint"
                            data-endeasing="easeOutQuint">
-                           <h3>{[专注于精研技术，所以优秀，拿技术来说话！]}</h3>
+                           <h3>{{tag11|default:'专注于精研技术，所以优秀，拿技术来说话！'}}</h3>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
                            data-easing="easeOutExpo" 
@@ -175,7 +175,7 @@
                            data-x="40">
                            <div class="list-slide">
                               <i class="icon-camera slide-icon"></i>
-                             <h5 class="dblue">{[苹果总部工程师参与授课，中美十大名师]}</h5>
+                             <h5 class="dblue">{{tag12|default:'苹果总部工程师参与授课，中美十大名师'}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -186,7 +186,7 @@
                            data-x="40">
                            <div class="list-slide">
                               <i class="icon-search slide-icon"></i>
-                              <h5 class="dblue">{[课程体系全面升级至2.0]}</h5>
+                              <h5 class="dblue">{{tag13|default:'课程体系全面升级至2.0'}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -197,7 +197,7 @@
                            data-x="40">
                            <div class="list-slide">
                               <i class="icon-code slide-icon"></i>
-                              <h5 class="dblue"> {[免费试听一个月，零学费入学，就业后还款！]}</h5>
+                              <h5 class="dblue"> {{tag14|default:'免费试听一个月，零学费入学，就业后还款！'}}</h5>
                            </div>
                         </div>
                         <div class="caption lfb caption_button_1 fadeout tp-caption start"
@@ -223,13 +223,13 @@
                      </li>
                      <!-- THE RESPONSIVE SLIDE -->
                      <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
-                        <img src=[{/static/img/slider-bg-2.jpg}] data-fullwidthcentering="on" alt="">
+                        <img src={{tagimg46|default:'/static/img/slider-bg-2.jpg'}} data-fullwidthcentering="on" alt="">
                         <div class="caption large_text sft"
                            data-x="660"
                            data-y="54"
                            data-speed="300"
                            data-start="800"
-                           data-easing="easeOutExpo"  >{[合作企业定制项目教学，入学签订就业协议，]}</div>
+                           data-easing="easeOutExpo"  >{{tag15|default:'合作企业定制项目教学，入学签订就业协议，'}}</div>
                         <div class="caption medium_text sfl"
                            data-x="689"
                            data-y="92"
@@ -241,7 +241,7 @@
                            data-y="88"
                            data-speed="300"
                            data-start="1100"
-                           data-easing="easeOutExpo"  ><span class="dblue">{[保障底薪、就业时间、终生就业跟踪指导]}</span></div>
+                           data-easing="easeOutExpo"  ><span class="dblue">{{tag16|default:'保障底薪、就业时间、终生就业跟踪指导'}}</span></div>
                         <div class="caption list_slide lfb tp-caption start" 
                            data-easing="easeOutExpo" 
                            data-start="1400" 
@@ -250,7 +250,7 @@
                            data-x="660">
                            <div class="list-slide">
                               <i class="icon-eye-open slide-icon"></i>
-                              <h5>{[零基础入学，导师制]}</h5>
+                              <h5>{{tag17|default:'零基础入学，导师制'}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -261,7 +261,7 @@
                            data-x="660">
                            <div class="list-slide">
                               <i class="icon-table slide-icon"></i>
-                              <h5>{[晚自习辅导，真机演练]}</h5>
+                              <h5>{{tag18|default:'晚自习辅导，真机演练'}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -272,7 +272,7 @@
                            data-x="660">
                            <div class="list-slide">
                               <i class="icon-ok slide-icon"></i>
-                              <h5>{[就业平均薪资7K以上]}</h5>
+                              <h5>{{tag19|default:'就业平均薪资7K以上'}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -283,7 +283,7 @@
                            data-x="660">
                            <div class="list-slide">
                               <i class="icon-twitter slide-icon"></i>
-                              <h5> {[自主研发JPTS 2.1教学保障体系]}</h5>
+                              <h5> {{tag20|default:'自主研发JPTS 2.1教学保障体系'}}</h5>
                            </div>
                         </div>
                         <div class="caption list_slide lfb tp-caption start" 
@@ -294,7 +294,7 @@
                            data-x="660">
                            <div class="list-slide">
                               <i class="icon-th slide-icon"></i>
-                              <h5>{[学习过程中按照企业项目流程管理（项目设计、开发、验收）]}</h5>
+                              <h5>{{tag21|default:'学习过程中按照企业项目流程管理（项目设计、开发、验收）'}}</h5>
                            </div>
                         </div>
                         <div class="caption lfl"
@@ -303,7 +303,7 @@
                            data-speed="300"
                            data-start="1400"
                            data-easing="easeOutExpo">
-                           <img src=[{/static/img/responsive-imac.png}] alt="iMac Responsive">
+                           <img src={{tagimg47|default:'/static/img/responsive-imac.png'}} alt="iMac Responsive">
                         </div>
                         <div class="caption lfl"
                            data-x="323"
@@ -311,7 +311,7 @@
                            data-speed="300"
                            data-start="1500"
                            data-easing="easeOutExpo">
-                           <img src=[{/static/img/responsive-ipad.png}] alt="iPad Responsive">
+                           <img src={{tagimg48|default:'/static/img/responsive-ipad.png'}} alt="iPad Responsive">
                         </div>
                         <div class="caption lfl"
                            data-x="472"
@@ -332,7 +332,7 @@
                   <div class="row">
                      <div class="slogan-content">
                         <div class="col-lg-9 col-md-9">
-                           <h2 class="slogan-title">{[iOS创想科技之美,梦想在这里启航!]}</h2>
+                           <h2 class="slogan-title">{{tag22|default:'iOS创想科技之美,梦想在这里启航!'}}</h2>
                         </div>
                         <div class="col-lg-3 col-md-3">
                            <div class="get-started">
@@ -360,9 +360,9 @@
                               </div>
                            </div>
                            <div class="content-box-info">
-                              <h3>{[c语言基础]}</h3>
+                              <h3>{{tag23|default:'c语言基础'}}</h3>
                               <p>
-                              {[变量及数据类型，分支与循环体语句，字符串及常用字符串函数，数组、结构体，指针本质与文件操作，位操作与函数指针，预处理与编译链接原理]}
+                              {{tag24|default:'变量及数据类型，分支与循环体语句，字符串及常用字符串函数，数组、结构体，指针本质与文件操作，位操作与函数指针，预处理与编译链接原理'}}
                               </p>
                               <a href="#">了解更多 + <i class="icon-angle-right"></i><i class="icon-angle-right"></i></a>
                            </div>
@@ -379,9 +379,9 @@
                               </div>
                            </div>
                            <div class="content-box-info">
-                              <h3>{[Objective基础]}</h3>
+                              <h3>{{tag25|default:'Objective基础'}}</h3>
                               <p>
-                              {[C编程基础，OC程序基本架构，类、对象、实例和方法，继承、多态与复合，分类与协议、属性与类扩展、块，内存管理，Foundation基础框架，数字对象、字符串对象、数组对象，词典对象、集合对象、文件与NSURL类]}
+                              {{tag26|default:'C编程基础，OC程序基本架构，类、对象、实例和方法，继承、多态与复合，分类与协议、属性与类扩展、块，内存管理，Foundation基础框架，数字对象、字符串对象、数组对象，词典对象、集合对象、文件与NSURL类'}}
                               </p>
                               <a href="#">了解更多 + <i class="icon-angle-right"></i><i class="icon-angle-right"></i></a>
                            </div>
@@ -398,10 +398,10 @@
                               </div>
                            </div>
                            <div class="content-box-info">
-                              <h3>{[iOS编程 7.0版]}</h3>
-                              <p> {[
+                              <h3>{{tag27|default:'iOS编程 7.0版'}}</h3>
+                              <p> {{tag28|default:'
                               Xcode 5.0.x 使用入门和技巧，Cocoa视图（UIKit框架），静态布局（storyboard）和动态布局；三大核心控件：（UIViewcontroller视图控制器编程 ，UITabBarController多组件选取器编程，UINavigationController导航控制器）
-                              UIButton，UIText，UILabel，UITableview，UIWebview，UIAlert，控件和触摸键盘事件关联，多视图和多class如何对应，如何代理]}</p>
+                              UIButton，UIText，UILabel，UITableview，UIWebview，UIAlert，控件和触摸键盘事件关联，多视图和多class如何对应，如何代理'}}</p>
                               <a href="#">了解更多 + <i class="icon-angle-right"></i><i class="icon-angle-right"></i></a>
                            </div>
                         </div>
@@ -417,10 +417,10 @@
                               </div>
                            </div>
                            <div class="content-box-info">
-                              <h3>{[iphone／ipad 实用]}</h3>
-                              <p>{[
+                              <h3>{{tag29|default:'iphone／ipad 实用'}}</h3>
+                              <p>{{tag30|default:'
                               地址本、时间，短信、电话，音频、视频多媒体，陀螺仪和触摸事件，照相机和图片，数据库（sqlite） 
-                              ]}</p>
+                              '}}</p>
                               <a href="#">了解更多 + <i class="icon-angle-right"></i><i class="icon-angle-right"></i></a>
                            </div>
                         </div>
@@ -436,9 +436,9 @@
                               </div>
                            </div>
                            <div class="content-box-info">
-                              <h3>{[iOS游戏开发]}</h3>
+                              <h3>{{tag31|default:'iOS游戏开发'}}</h3>
                               <p>
-                              {[苹果 官方 cocos2d 教材 完整的游戏代码，精灵，层，场景，动画效果，游戏杆，纹理图和效率，控制和走动，游戏种的菜单，道具、障碍物，对战机器人，音效，物理引擎，粒子系统，性能]}
+                              {{tag32|default:'苹果 官方 cocos2d 教材 完整的游戏代码，精灵，层，场景，动画效果，游戏杆，纹理图和效率，控制和走动，游戏种的菜单，道具、障碍物，对战机器人，音效，物理引擎，粒子系统，性能'}}
                               </p>
                               <a href="#">了解更多 + <i class="icon-angle-right"></i><i class="icon-angle-right"></i></a>
                            </div>
@@ -455,10 +455,10 @@
                               </div>
                            </div>
                            <div class="content-box-info">
-                              <h3>{[iOS项目实战]}</h3>
-                              <p>{[
+                              <h3>{{tag33|default:'iOS项目实战'}}</h3>
+                              <p>{{tag34|default:'
                               最流行的 天天爱消除 4个变种游戏，天气预报，局域网短信群发，C / S 结构语音短信，Sina 微博客户端，微信客户端，企业网站APP制作
-                             ]} </p>
+                             '}} </p>
                               <a href="#">了解更多 + <i class="icon-angle-right"></i><i class="icon-angle-right"></i></a>
                            </div>
                         </div>
@@ -473,9 +473,9 @@
                   <div class="row">
                      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 animate_afl d1">
                         <div class="portfolio-desc">
-                           <h3 class="title">{[项目展示]}：</h3>
-                           <p>{[实践出真知，只有经过严格的锤炼，才能掌握过硬的技术，才能立于不败之地，才能所向披靡]}</p>
-                            <p>{[企业所需是有扎实基础，高领悟力，快速上手的人才，技术是互联网公司最看重的品质。]}</p>
+                           <h3 class="title">{{tag35|default:'项目展示'}}：</h3>
+                           <p>{{tag36|default:'实践出真知，只有经过严格的锤炼，才能掌握过硬的技术，才能立于不败之地，才能所向披靡'}}</p>
+                            <p>{{tag37|default:'企业所需是有扎实基础，高领悟力，快速上手的人才，技术是互联网公司最看重的品质。'}}</p>
                            <div class="carousel-controls">
                               <a class="prev" href="#portfolio-carousel" data-slide="prev"><i class="icon-angle-left"></i></a>
                               <a class="next" href="#portfolio-carousel" data-slide="next"><i class="icon-angle-right"></i></a>
@@ -495,9 +495,9 @@
                                           <span class="fullscreen"><i class="icon-search"></i></span><img src="/static/img/xiangmu1.png" alt=" "/>
                                           </a>
                                           <div class="portfolio-item-title">
-                                             <a href="single-project.html">{[Insta Genius]}</a>
+                                             <a href="single-project.html">{{tag38|default:'Insta Genius'}}</a>
                                              <p>
-                                                {[Design / Development]}
+                                                {{tag39|default:'Design / Development'}}
                                              </p>
                                           </div>
                                           <div class="clearfix"></div>
@@ -509,9 +509,9 @@
                                           <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src="/static/img/xiangmu2.png" alt=" "/>
                                           </a>
                                           <div class="portfolio-item-title">
-                                             <a href="single-project.html">{[YA Sound]}</a>
+                                             <a href="single-project.html">{{tag40|default:'YA Sound'}}</a>
                                              <p>
-                                                {[Sound / Audio]}
+                                                {{tag41|default:'Sound / Audio'}}
                                              </p>
                                           </div>
                                           <div class="clearfix"></div>
@@ -523,9 +523,9 @@
                                           <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src="/static/img/xiangmu3.png" alt=" "/>
                                           </a>
                                           <div class="portfolio-item-title">
-                                             <a href="single-project.html">{[Nike Shoe]}</a>
+                                             <a href="single-project.html">{{tag42|default:'Nike Shoe'}}</a>
                                              <p>
-                                                {[Apareal / Shoe]}
+                                                {{tag43|default:'Apareal / Shoe'}}
                                              </p>
                                           </div>
                                           <div class="clearfix"></div>

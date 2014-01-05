@@ -7,11 +7,13 @@ from .models import *
 
 def mainpage(request):  # mainpage
     alltext = TextInfo.objects.all()
+    allimg = ImgInfo.objects.all()
     d = {}
     for text in alltext:
 	d[text.tagname]        = text.text
-	d[text.tagname+'_url'] = text.url
-    return render_to_response('mainpage.html',d,context_instance=RequestContext(request))
+    for img in allimg:
+	d[img.tagname]        = img.image
+    return render_to_response('mainpage_tag.html',d,context_instance=RequestContext(request))
 
 def mainpageenglish(request):  # mainpageenglish
     return render_to_response('mainpageenglish.html', context_instance=RequestContext(request))
