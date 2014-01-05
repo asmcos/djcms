@@ -1,0 +1,125 @@
+/* Global */
+
+
+.fright{float:right;
+}
+.fleft{float:left;
+}
+div {
+display: block;
+}
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	padding:0;
+	z-index:12;
+	overflow:hidden;
+}
+
+/* ____________________________________ Slide 6 ____________________________________ */ 
+
+
+/* ____________________ exhib_block ____________________ */
+.exhib_block {position:relative;}
+.exhib_block .fleft {margin-left:1px;}
+.exhib_line_center {
+	position:absolute;
+	left:50%;
+	top:12px;
+	width:1px;
+	height:83%;
+	background:#c3c3c3;
+}
+.exhib_block p {
+	position:relative;
+	padding-bottom:5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:14px;
+	line-height:21px;
+	color:#343434;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.exhib_cont:hover p {color:#f14833;
+}
+
+.exhib_p_top {margin-left:20px;
+}
+
+.exhib_cont {
+	position:relative;
+	width:532px;
+	margin-top:20px;
+	padding:13px 10px 9px;
+	background:#fff;
+	color:#8d8d8d;
+	border:1px solid #dedede;
+	border-radius:6px;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.exhib_cont:hover {
+	-webkit-box-shadow: 0 0 16px rgba(0,0,0,0.15);
+     -moz-box-shadow: 0 0 16px rgba(0,0,0,0.15);
+          box-shadow: 0 0 16px rgba(0,0,0,0.15);
+}
+
+.exhib_date_right, .exhib_date_left, .exhib_date_top {
+	display:block;
+	position:absolute;
+	width:130px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	font-size: 18px;
+	line-height:20px;
+	color:#f14833;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.exhib_date_top {
+	left:49.5%;
+	top:0;
+	width:95px;
+	text-align:right;
+	background:url(/static/img/exhib/exhib_date_top_bg_h.png) no-repeat left center;
+}
+
+.exhib_date_left {
+	left:-130px;
+	top:27px;
+	background:url(/static/img/exhib/exhib_date_left_bg.png) no-repeat right center;
+}
+.exhib_date_right {
+	right:-130px;
+	top:27px;
+	text-align:right;
+	background:url(/static/img/exhib/exhib_date_left_bg_right.png) no-repeat left center;
+}
+.exhib_cont:hover .exhib_date_right, .exhib_cont:hover .exhib_date_left, .exhib_cont:hover .exhib_date_top {font-size:26px;
+}
+
+.exhib_cont:hover .exhib_date_top {background:url(/static/img/exhib/exhib_date_top_bg_h.png) no-repeat left center;
+}
+.exhib_cont:hover .exhib_date_left {background:url(/static/img/exhib/exhib_date_left_bg_h.png) no-repeat right center;
+}
+.exhib_cont:hover .exhib_date_right {background:url(/static/img/exhib/exhib_date_left_bg_right_h.png) no-repeat left center;
+}
+
+
+/* ___________________ //exhib_block ___________________ */
+
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{position:relative;z-index:99;clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
