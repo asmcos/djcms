@@ -17,7 +17,7 @@ print count
 all_text_tag = re.findall("\{\[(.*?)\]\}",buf,re.S)
 buf1 = buf
 for a in all_text_tag:
-	a1 = '{{tag' +str(count) +"|default:'" + a +"'}}" 	
+	a1 = '{{tag' +str(count) +'|default:"' + a +'"}}' 	
 	buf1 = buf1.replace("{["+a+"]}",a1,1)
 	count += 1
 

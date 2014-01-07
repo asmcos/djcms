@@ -12,7 +12,7 @@ input_file = sys.argv[1]
 
 buf = open(input_file).read()
 
-all_text_tag = re.findall("\{\{(tag\d+?)\|default:'(.*?)'\}\}",buf,re.S)
+all_text_tag = re.findall('\{\{(tag\d+?)\|default:"(.*?)"\}\}',buf,re.S)
 print "Text have %d" % len(all_text_tag)
 
 for a in all_text_tag:
