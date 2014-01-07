@@ -92,16 +92,17 @@ display: block;
 	top:0;
 	width:95px;
 	text-align:right;
-	background:url(/static/img/exhib/exhib_date_top_bg_h.png) no-repeat left center;
+	/*background:url(/static/img/exhib/exhib_date_top_bg_h.png) no-repeat left center;
+*/
 }
 
 .exhib_date_left {
-	left:-130px;
+	left:-200px;
 	top:27px;
 	background:url(/static/img/exhib/exhib_date_left_bg.png) no-repeat right center;
 }
 .exhib_date_right {
-	right:-130px;
+	right:-200px;
 	top:27px;
 	text-align:right;
 	background:url(/static/img/exhib/exhib_date_left_bg_right.png) no-repeat left center;
