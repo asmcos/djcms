@@ -23,4 +23,6 @@ urlpatterns = patterns('',
     url(r'^image/(?P<path>.*)$','django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT+'/image', 'show_indexes':True}),
 
+    url(r'^media/(?P<path>.*)$','django.views.static.serve',
+        {'document_root': settings.MEDIA_ROOT, 'show_indexes':True}),
 )
