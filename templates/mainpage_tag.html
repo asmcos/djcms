@@ -351,6 +351,25 @@
                            <div id="portfolio-carousel" class="portfolio-carousel slide">
                               <div class="carousel-inner">
                                  <div class="item active">
+
+				{%for sa in object_studentsapp0 %}
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d4">
+                                       <div class="portfolio-item">
+                                          <a href={{sa.imagebig}} class="portfolio-item-link" data-rel="prettyPhoto" >
+                                          <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src={{sa.imagemini}} alt=" "/>
+                                          </a>
+                                          <div class="portfolio-item-title">
+                                             <a href={{sa.url}}>{{sa.title1}}</a>
+                                             <p>
+                                                {{sa.title2}}
+                                             </p>
+                                          </div>
+                                          <div class="clearfix"></div>
+                                       </div>
+                                    </div>
+
+			       {%endfor%}
+				   {%if studentsapp0 == 0%}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d2">
                                        <div class="portfolio-item">
                                           <a href={{tagimg150|default:'/static/img/portfolio-1.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -366,6 +385,9 @@
                                           <div class="clearfix"></div>
                                        </div>
                                     </div>
+				   {%endif%}
+				   {%if studentsapp1 == 0 %}
+
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d3">
                                        <div class="portfolio-item">
                                           <a href={{tagimg152|default:'/static/img/portfolio-2.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -380,6 +402,8 @@
                                           <div class="clearfix"></div>
                                        </div>
                                     </div>
+				   {%endif%}
+				   {%if studentsapp2 == 0%}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d4">
                                        <div class="portfolio-item">
                                           <a href={{tagimg154|default:'/static/img/portfolio-3.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -394,8 +418,29 @@
                                           <div class="clearfix"></div>
                                        </div>
                                     </div>
+				   {%endif%}
                                  </div>
                                  <div class="item">
+
+				{%for sa in object_studentsapp1 %}
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d4">
+                                       <div class="portfolio-item">
+                                          <a href={{sa.imagebig}} class="portfolio-item-link" data-rel="prettyPhoto" >
+                                          <span class="portfolio-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img src={{sa.imagemini}} alt=" "/>
+                                          </a>
+                                          <div class="portfolio-item-title">
+                                             <a href={{sa.url}}>{{sa.title1}}</a>
+                                             <p>
+                                                {{sa.title2}}
+                                             </p>
+                                          </div>
+                                          <div class="clearfix"></div>
+                                       </div>
+                                    </div>
+			       {%endfor%}
+	
+
+				   {%if studentsapp3 == 0%}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
                                        <div class="portfolio-item">
                                           <a href={{tagimg156|default:'/static/img/portfolio-4.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -407,6 +452,8 @@
                                           <div class="clearfix"></div>
                                        </div>
                                     </div>
+				   {%endif%}
+				   {%if studentsapp4 == 0 %}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
                                        <div class="portfolio-item">
                                           <a href={{tagimg158|default:'/static/img/portfolio-5.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -420,6 +467,8 @@
                                           <div class="clearfix"></div>
                                        </div>
                                     </div>
+				   {%endif%}
+				   {%if studentsapp5 == 0 %}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
                                        <div class="portfolio-item">
                                           <a href="images/portfolio-6.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -433,6 +482,7 @@
                                           <div class="clearfix"></div>
                                        </div>
                                     </div>
+				   {%endif%}
                                  </div>
                               </div>
                            </div>

@@ -5,6 +5,26 @@ from django.template import RequestContext
 import os, datetime
 from .models import *
 
+
+def make_model_count(model,count,part=None):
+	name = model._meta.object_name.lower()
+	db   = model.objects.all()[:count]
+	d = {}
+
+	for i in range(0,count):
+		d[name+str(i)] = 0
+
+	for i in range(0,len(db)):
+		d[name+str(i)] = 1
+ 
+	if part != None:
+		l = (count + part) / part 	
+		for i in range(0,l):
+			d["object_"+name + str(i)] = db[i * part:i * part +part]
+	else:
+		d["object_"+name] = db
+	return d
+
 def mainpage(request):  # mainpage
     alltext = TextInfo.objects.all()
     allimg = ImgInfo.objects.all()
@@ -13,6 +33,10 @@ def mainpage(request):  # mainpage
 	d[text.tagname]        = text.text
     for img in allimg:
 	d[img.tagname]        = img.image
+
+    d1 = make_model_count(StudentsApp,6,3) 
+    d.update(d1)
+
     return render_to_response('mainpage_tag.html',d,context_instance=RequestContext(request))
 
 def mainpageenglish(request):  # mainpageenglish
