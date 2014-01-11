@@ -11,11 +11,8 @@ def make_model_count(model,count,part=None):
 	db   = model.objects.all()[:count]
 	d = {}
 
-	for i in range(0,count):
-		d[name+str(i)] = 0
+	d[name+"count"] = len(db)
 
-	for i in range(0,len(db)):
-		d[name+str(i)] = 1
  
 	if part != None:
 		l = (count + part) / part 	

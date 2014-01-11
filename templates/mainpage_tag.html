@@ -369,7 +369,7 @@
                                     </div>
 
 			       {%endfor%}
-				   {%if studentsapp0 == 0%}
+				   {%if studentsappcount < 1 %}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d2">
                                        <div class="portfolio-item">
                                           <a href={{tagimg150|default:'/static/img/portfolio-1.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -386,7 +386,7 @@
                                        </div>
                                     </div>
 				   {%endif%}
-				   {%if studentsapp1 == 0 %}
+				   {%if studentsappcount < 2 %}
 
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d3">
                                        <div class="portfolio-item">
@@ -403,7 +403,7 @@
                                        </div>
                                     </div>
 				   {%endif%}
-				   {%if studentsapp2 == 0%}
+				   {%if studentsappcount < 3 %}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item animate_afc d4">
                                        <div class="portfolio-item">
                                           <a href={{tagimg154|default:'/static/img/portfolio-3.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -440,7 +440,7 @@
 			       {%endfor%}
 	
 
-				   {%if studentsapp3 == 0%}
+				   {%if studentsappcount < 4 %}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
                                        <div class="portfolio-item">
                                           <a href={{tagimg156|default:'/static/img/portfolio-4.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -453,7 +453,7 @@
                                        </div>
                                     </div>
 				   {%endif%}
-				   {%if studentsapp4 == 0 %}
+				   {%if studentsappcount < 5 %}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
                                        <div class="portfolio-item">
                                           <a href={{tagimg158|default:'/static/img/portfolio-5.jpg'}} class="portfolio-item-link" data-rel="prettyPhoto" >
@@ -468,7 +468,7 @@
                                        </div>
                                     </div>
 				   {%endif%}
-				   {%if studentsapp5 == 0 %}
+				   {%if studentsappcount < 6 %}
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
                                        <div class="portfolio-item">
                                           <a href="images/portfolio-6.jpg" class="portfolio-item-link" data-rel="prettyPhoto" >
