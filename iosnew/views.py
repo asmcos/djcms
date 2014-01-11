@@ -8,7 +8,7 @@ from .models import *
 
 def make_model_count(model,count,part=None):
 	name = model._meta.object_name.lower()
-	db   = model.objects.all()[:count]
+	db   = model.objects.all().order_by('-id')[:count]
 	d = {}
 
 	d[name+"count"] = len(db)
