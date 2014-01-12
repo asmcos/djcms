@@ -790,6 +790,23 @@
                      <div class="clearfix"></div>
                      <div class="blog-showcase col-lg-12 col-md-12 col-sm-12 col-xs-12 animate_afb d1">
                         <ul>
+			  {%for t in object_teacher%}
+                           <li class="">
+                              <div class="blog-showcase-thumb col-lg-4">
+                                 <div class="post-body">
+                                    <span class="post-item-hover"></span><span class="fullscreen"><i class="icon-search"></i></span><img alt="" src={{t.photo}}>
+                                 </div>
+                              </div>
+                              <div class="blog-showcase-extra-info col-lg-4">
+                                 <span><a href="#"></span>
+                                 <h4><a href="#" class="title">{{t.name}}</a></h4>
+                                 <p>{{t.intro}}</p>
+                                 <a href="#">{{tag107|default:"了解更多 + "}}<i class="icon-double-angle-right"></i></a>
+                              </div>
+                           </li>
+			  {%endfor%}
+
+			   {%if teachercount < 1%}
                            <li class="">
                               <div class="blog-showcase-thumb col-lg-4">
                                  <div class="post-body">
@@ -803,6 +820,8 @@
                                  <a href="#">{{tag107|default:"了解更多 + "}}<i class="icon-double-angle-right"></i></a>
                               </div>
                            </li>
+			   {%endif%}
+			   {%if teachercount < 2%}
                            <li>
                               <div class="blog-showcase-thumb col-lg-4">
                                  <div class="post-body">
@@ -816,6 +835,8 @@
                                  <a href="#">{{tag110|default:"了解更多 +"}} <i class="icon-double-angle-right"></i></a>
                               </div>
                            </li>
+			   {%endif%}
+			   {%if teachercount < 3%}
                            <li class="blog-first-el">
                               <div class="blog-showcase-thumb col-lg-4">
                                  <div class="post-body">
@@ -829,6 +850,8 @@
                                  <a href="#">{{tag113|default:"了解更多 +"}} <i class="icon-double-angle-right"></i></a>
                               </div>
                            </li>
+			   {%endif%}
+
                         </ul>
                         <div class="clearfix"></div>
                      </div>

@@ -34,6 +34,9 @@ def mainpage(request):  # mainpage
     d1 = make_model_count(StudentsApp,6,3) 
     d.update(d1)
 
+    d1 = make_model_count(Teacher,3)
+    d.update(d1)
+
     return render_to_response('mainpage_tag.html',d,context_instance=RequestContext(request))
 
 def mainpageenglish(request):  # mainpageenglish

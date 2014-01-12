@@ -18,3 +18,9 @@ class StudentsApp(models.Model):
     imagemini      = models.ImageField(upload_to='./image')
     imagebig       = models.ImageField(upload_to='./image')
     url            = models.CharField(max_length=1024)
+
+class Teacher(models.Model):
+    name        = models.CharField(max_length=64)
+    intro       = models.CharField(max_length=1024)
+    photo       = models.ImageField(upload_to='./image')
+ 
