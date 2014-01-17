@@ -107,7 +107,7 @@ display: block;
 	text-align:right;
 	background:url(/static/img/exhib/exhib_date_left_bg_right.png) no-repeat left center;
 }
-.exhib_cont:hover .exhib_date_right, .exhib_cont:hover .exhib_date_left, .exhib_cont:hover .exhib_date_top {font-size:26px;
+.exhib_cont:hover .exhib_date_right, .exhib_cont:hover .exhib_date_left, .exhib_cont:hover .exhib_date_top {font-size:22px;
 }
 
 .exhib_cont:hover .exhib_date_top {background:url(/static/img/exhib/exhib_date_top_bg_h.png) no-repeat left center;
