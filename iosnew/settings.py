@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'iosnew',
     'jeapmain',
+    'pythonvideo',
 )
 
 MIDDLEWARE_CLASSES = (

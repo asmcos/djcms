@@ -28,4 +28,11 @@ urlpatterns = patterns('',
 
 
     url(r'^jeapmain$', 'jeapmain.views.home'),
+
+
+    url(r'^pythonvideo$', 'pythonvideo.views.home', name='home'),
+    url(r'^cates$','pythonvideo.views.cates',name='cates'),
+    url(r'^courses$','pythonvideo.views.courses',name='courses'),
+    url(r'^videos$','pythonvideo.views.videos',name='videos'),
+    url(r'^video/(\d+)$','pythonvideo.views.video',name='video'),
 )

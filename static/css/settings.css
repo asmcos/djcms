@@ -748,7 +748,7 @@ website:   	http://www.themepunch.com
 /************************************
 		-	TP BANNER TIMER		-
 *************************************/
-.tp-bannertimer								{	width:100%; height:10px; background:url(../assets/timer.png);position:absolute; z-index:200;top:0px;}
+.tp-bannertimer								{	width:100%; height:10px; position:absolute; z-index:200;top:0px;}
 .tp-bannertimer.tp-bottom					{	bottom:0px;height:5px; top:auto;}
 
 
@@ -813,7 +813,7 @@ website:   	http://www.themepunch.com
 .caption.slidelink a div,
 .tp-caption.slidelink a div {	width:3000px; height:1500px;  background:url(../assets/coloredbg.png) repeat;}
 
-.tp-loader 	{	background:url(../assets/loader.gif) no-repeat 10px 10px; background-color:#fff;  margin:-22px -22px; top:50%; left:50%; z-index:10000; position:absolute;width:44px;height:44px;
+.tp-loader 	{	background-color:#fff;  margin:-22px -22px; top:50%; left:50%; z-index:10000; position:absolute;width:44px;height:44px;
 				border-radius: 3px;
 				-moz-border-radius: 3px;
 				-webkit-border-radius: 3px;

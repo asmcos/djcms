@@ -7,10 +7,13 @@ output_file = sys.argv[2]
 
 buf = open(input_file).read()
 
+main_count = 0
+if input_file == "jeap_main.html":
+	main_count = 2000
 
 # get exist tag count.
 all_tag = re.findall("\{\{tag(.*?)\|default:.*?\}\}",buf,re.S)
-count = len(all_tag) + 1
+count = len(all_tag) + 1 + main_count
 print count
 
 

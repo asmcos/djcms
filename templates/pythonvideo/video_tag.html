@@ -1,0 +1,90 @@
+{%extends "pythonvideo/base_tag.html"%}
+{%block content%}
+            <!-- /#header-2 -->
+            <section id="page-title-wrapper" class="section page-title-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 page-title">
+                        <h4>{{tag4001|default:"欢迎学习"}}：《{{courses.title}}》</h4>
+                    </div>
+                    <!-- /.page-title -->
+                    <div class="col-xs-6 hidden-xs breadcrumb-wrapper">
+         
+                            
+                       
+                    </div>
+                    <!-- /.breadcrumb-wrapper -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#page-title-wrapper -->
+           <section id="blog-wrapper" class="section layout-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 content-wrapper">
+                        <article class="post">
+                            <div class="post-thumb">
+				{{vid.url|safe}}
+                            </div>
+                            <!-- /.post-thumb -->
+                            <div class="post-content">
+                                <h4 class="post-title">{{vid.title}}</h4>
+				<p>{{vid.content}}</p>
+                            </div>
+                            <!-- /.post-content -->
+                            <div class="post-meta">
+                                <ul class="meta-list">
+                                    <li>
+                                        <span>Posted on</span>
+                                        <span class="black" >{{vid.createdate}}</span>
+                                    </li>
+                                    <li>
+                                        <span>By</span>
+                                        <a href="#">Admin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.post-meta -->
+                        </article>
+                        <!-- /.pagination -->
+                    </div>
+                    <!-- /.content-wrapper -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#blog-wrapper -->
+	
+           <section id="blog-wrapper" class="section layout-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 content-wrapper">
+
+		    <h5 class="subpage-title">{{tag4002|default:"章节列表"}}</h5>
+<div class="panel-group" id="accordion">
+	{%for v in videos%}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse{{v.id}}">
+                {{v.title}}
+                </a> <a style="float:right;" href=/video/{{v.courseid.id}}?vid={{v.id}}>{{tag4003|default:"开始学习"}}+</a>
+            </h4>
+        </div>
+        <div id="collapse{{v.id}}" class="panel-collapse collapse">
+            <div class="panel-body">
+		{{v.intro}}
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+
+		    </div> <!--col-md-9-->
+		</div> <!--row-->
+	     </div> <!--container-->
+	   </section>
+{%endblock%}
