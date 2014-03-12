@@ -177,7 +177,17 @@ Image"></div>
 
                                 data-start="1400"
                                 data-easing="easeOutExpo">
-                                {{tag25|default:"苹果iOS是由苹果公司开发的移动操作系统苹果公司最早于2007年1月9日的Macworld"}}<br>				{{tag26|default:"大会上公布这个系统，最初是设计给iPhone使用的，后来陆续套用到iPod touch、iPad以"}}<br>				{{tag27|default:"及Apple TV等产品上。iOS与苹果的Mac OS X操作系统一样，它也是以Darwin为基础的，"}}<br>				{{tag28|default:"因此同样属于类Unix的商业操作系统。原本这个系统名为iPhone OS，因为iPad，iPhone，"}}<br>				{{tag29|default:"iPod Touch都使用iPhone OS，所以2010WWDC大会上宣布改名为iOS。"}}
+
+				{{tag25|default:"Android是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，"}}<br>
+				{{tag26|default:"由Google公司和开放手机联盟领导及开发。尚未有统一中文名称，中国大陆地区较多人使用“安卓”或“安致”。"}}<br>
+				{{tag27|default:"Android操作系统最初由Andy Rubin开发，主要支持手机。2005年8月由Google收购注资。2007年11月，"}}<br>
+				{{tag28|default:"Google与84家硬件制造商、软件开发商及电信营运商组建开放手机联盟共同研发改良Android系统。"}}<br>
+				{{tag29|default:"随后Google以Apache开源许可证的授权方式，发布了Android的源代码。"}}
+
+
+
+
+
                             </div>
                             <a href=/courses?cateid=5 target="view_window" class="caption btn btn-flat flat-primary btn-bordered sfb stb" 
                                 data-x="145"
@@ -209,6 +219,11 @@ Image"></div>
             <!-- /.fullwidthbanner-container -->
             <section id="our-services" class="section colored-wrapper">
                 <div class="container">
+		    <h5 class="subpage-title">
+                        <span>课程分类</span>
+                        <!-- Controls -->
+			<a href=/cates class="prev black disabled" style="width:92px;height:30px; " target=_blank>点击更多</a>
+                    </h5>
                     <div class="row">
 			{%for c in cates%}
 			<a href=/courses?cateid={{c.id}} target="view_window">
@@ -277,9 +292,8 @@ Image"></div>
                     <h5 class="subpage-title">
                         <span>{{tag33|default:"最新视频"}}</span>
                         <!-- Controls -->
- 			<a href=/videos target="view_window">
-                        <span class="next" ><i class="icon-angle-right"></i></span>
-                        </a>
+ 			<a href=/videos class="prev black disabled" style="width:92px;height:30px; " target=_blank>点击更多</a>
+                        
                     </h5>
                     <div class="row">
                         <div class="row">
@@ -317,9 +331,7 @@ Image"></div>
                     <h5 class="subpage-title">
                         <span>{{tag34|default:"热门视频"}}</span>
                         <!-- Controls -->
-			<a href=/videos target="view_window">
-                        <span class="next"><i class="icon-angle-right"></i></span>
-                        </a>
+			<a href=/videos class="prev black disabled" style="width:92px;height:30px; " target=_blank>点击更多</a>
                     </h5>
                     <div class="row">
                         <div class="row">

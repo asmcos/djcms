@@ -34,7 +34,7 @@ def cates(request):
         for img in allimg:
 		d[img.tagname]        = img.image
 	
-	return render_to_response('pythonvideo/cates.html',d,context_instance=RequestContext(request))
+	return render_to_response('pythonvideo/cates_tag.html',d,context_instance=RequestContext(request))
 				
 def courses(request):
 	d	= {}
