@@ -3,7 +3,7 @@ from django.db import models
 
 
 class Category(models.Model):
-	image	   = models.ImageField(upload_to='./image',default="defaultcate.jpg")
+	image	   = models.ImageField(upload_to='./image',default="./image/defaultcate.jpg")
 	icon	   = models.CharField(max_length=64)
 	count      = models.IntegerField(default=0)
 	title      = models.CharField(max_length=256)
@@ -17,7 +17,7 @@ class Course(models.Model):
 	title      = models.CharField( max_length=256)
 	count      = models.IntegerField(default=0)
 	intro      = models.CharField( max_length=1024,default='课程')
-	image	   = models.ImageField(upload_to='./image',default="defaultcourse.jpg")
+	image	   = models.ImageField(upload_to='./image',default="./image/defaultcourse.jpg")
 	cateid     = models.ForeignKey(Category)
 	createdate = models.DateField(auto_now=True)
 	order      = models.IntegerField(default=0)
@@ -31,7 +31,7 @@ class Video(models.Model):
 	count      = models.IntegerField(default=0)
 	content    = models.TextField(default="视频")
 	intro      = models.CharField( max_length=1024)
-	image	   = models.ImageField(upload_to='./image',default="defaultvideo.jpg")
+	image	   = models.ImageField(upload_to='./image',default="./image/defaultvideo.jpg")
 	courseid   = models.ForeignKey(Course)
 	createdate = models.DateField(auto_now=True)
 	order      = models.IntegerField(default=0)
