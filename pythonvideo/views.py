@@ -6,13 +6,15 @@ from django.template import RequestContext
 from .models import *
 
 def home(request):
-	d	= {}
-	cates	= Category.objects.all().order_by('-id')[:4]
-	courses	= Course.objects.all().order_by('-id')[:4]
-	videos	= Video.objects.all().order_by('-id')[:4]
+	d	   = {}
+	cates	   = Category.objects.all().order_by('-order')[:4]
+	courses	   = Course.objects.all().order_by('-order')[:4]
+	videos	   = Video.objects.all().order_by('-id')[:4]
+	hotvideos  = Video.objects.all().order_by('-count')[:4]
 	d['cates']=cates
 	d['courses']=courses
 	d['videos']=videos
+	d['hotvideos']=hotvideos
         alltext = TextInfo.objects.all()
         allimg = ImgInfo.objects.all()
         for text in alltext:
@@ -61,11 +63,9 @@ def videos(request):
 		videos	= Video.objects.filter(cateid=request.GET['vid']).order_by('-id')
 	else:
 		videos  = Video.objects.all().order_by('id')
-	print len(videos)
 	videos = list(videos)[p * 9: (p+1) * 9]
 
 	d['videos']=videos
-	print len(videos)
 	d['page_next'] = p+2
 	return render_to_response('pythonvideo/videos_tag.html',d,context_instance=RequestContext(request))
 
@@ -76,6 +76,12 @@ def video(request,id):
 	
 	d['videos']	=videos
 		
+	try:
+		c = Course.objects.get(id=id)
+		c.count +=1
+		c.save()
+	except:
+		pass
 
 	d['courses']	= Course.objects.get(id=id)
 	if 'vid' in request.GET:
