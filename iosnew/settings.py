@@ -39,8 +39,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'iosnew',
-    'jeapmain',
-    'pythonvideo',
+    #'jeapmain',
+    #'pythonvideo',
+    #'game',
 )
 
 MIDDLEWARE_CLASSES = (

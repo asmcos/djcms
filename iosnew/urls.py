@@ -35,4 +35,13 @@ urlpatterns = patterns('',
     url(r'^courses$','pythonvideo.views.courses',name='courses'),
     url(r'^videos$','pythonvideo.views.videos',name='videos'),
     url(r'^video/(\d+)$','pythonvideo.views.video',name='video'),
+
+
+    url(r'^game$', 'game.views.home', name='gamehome'),
+    url(r'^list$', 'game.views.listpage', name='list'),
+    url(r'^teachers$', 'game.views.teachers', name='teachres'),
+    url(r'^showpage/(\d+)$', 'game.views.showpage', name='showpage'),
+    url(r'^aboutus$', 'game.views.aboutus', name='aboutus'),
+
+
 )
