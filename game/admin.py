@@ -18,7 +18,7 @@ class TeacherAdmin(admin.ModelAdmin):
 class SinglepageAdmin(admin.ModelAdmin):
     list_display =('title',)
     class Media:
-	js=("/static/js/jquery.min.js","/static/ckeditor.js","/static/adapters/jquery.js","/static/js/edit.js",)
+	js=("/static/game/js/jquery.min.js","/static/ckeditor.js","/static/adapters/jquery.js","/static/game/js/edit.js",)
 admin.site.register(TextInfo,TextInfoAdmin)
 admin.site.register(ImgInfo,ImgInfoAdmin)
 admin.site.register(StudentsApp,StudentsAppAdmin)
