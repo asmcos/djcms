@@ -13,6 +13,8 @@ class ImgInfo(models.Model):
     image      = models.ImageField(upload_to='./image')
     tagname    = models.CharField(max_length=64)
     def image_tag(self):
+	if self.image[0] == '/':
+    		return u'<img src="%s" />' % self.image
     	return u'<img src="/%s" />' % self.image
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
