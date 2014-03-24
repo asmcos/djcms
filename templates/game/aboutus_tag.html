@@ -1,0 +1,87 @@
+
+{%extends "game/game_base_tag.html"%}
+			
+			{%block content%}
+			<!-- Banner Start -->
+			
+			<div class="banner padd">
+				<div class="container">
+					<!-- Image -->
+					
+					<!-- Heading -->
+					<h2 class="white">{{tag2001|default:"About Us"}}</h2>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			
+			<!-- Banner End -->
+			
+			
+			
+			<!-- Inner Content -->
+			<div class="inner-page padd">
+			
+				<!-- About company -->
+				<div class="about-company padd">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<!-- About Compnay Item -->
+								<div class="about-company-item">
+									<!-- About Company Image -->
+									<img class="img-responsive img-thumbnail" src="{{tagimg2008|default:'/static/img/chef/about-1.jpg'}}" alt="" />
+								</div>
+							</div>
+							<div class="col-md-6">
+								<!-- About Compnay Item -->
+								<div class="about-company-item">
+									<!-- Heading -->
+									<h3>{{tag2002|default:"About Our"}}</h3>
+									<!-- Paragraph -->
+									<p>{{tag2003|default:"orem ipsum dolor sit amet,  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alio consequat"}}</p>
+									<br /><!--/ Line break -->
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<!-- About company inner items -->
+											<div class="about-company-inner">
+												<!-- Paragraph with icon -->
+												<span class="company-feature"><i class="fa fa-building-o br-red"></i> <b class="red"></b>{{tag2004|default:" Locations"}}</span>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<!-- About company inner items -->
+											<div class="about-company-inner">
+												<!-- Paragraph with icon -->
+												<span class="company-feature"><i class="fa fa-trophy br-lblue"></i> <b class="lblue"></b>{{tag2005|default:" Awards"}}</span>
+											</div>
+										</div>
+										<div class="clearfix visible-xs"></div>
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<!-- About company inner items -->
+											<div class="about-company-inner">
+												<!-- Paragraph with icon -->
+												<span class="company-feature"><i class="fa fa-users br-green"></i> <b class="green"></b>{{tag2006|default:" Chefs"}}</span>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<!-- About company inner items -->
+											<div class="about-company-inner">
+												<!-- Paragraph with icon -->
+												<span class="company-feature"><i class="fa fa-shopping-cart br-purple"></i> <b class="purple"></b>{{tag2007|default:" Dishes."}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+			
+
+				
+			</div><!-- / Inner Page Content End -->	
+			
+{%endblock%}

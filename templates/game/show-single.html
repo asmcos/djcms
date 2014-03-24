@@ -1,0 +1,78 @@
+{%extends "game/game_base_tag.html"%}
+{%block content%}
+
+			
+			<div class="banner padd">
+				<div class="container">
+					<!-- Image -->
+					<!-- Heading -->
+					
+					<ol class="breadcrumb">
+					</ol>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			
+			<!-- Banner End -->
+			
+			
+			
+			<!-- Inner Content -->
+			<div class="inner-page padd">
+			
+			
+				<!-- Blog Start -->
+					
+				<div class="blog">
+					<div class="container">
+					  
+						
+						<div class="row">
+							<div class="col-md-8">
+							
+								<h3 style="text-indent: -1.5em;
+text-align: center;">{{page.title}}</h3>
+								
+								<hr /><!-- Horizontal line -->
+								<div class="sidebar-widget">
+								{{page.content|safe}}
+								</div><div class="clearfix"></div>
+
+
+								<!-- Navigation -->
+
+								<div class="clearfix"></div>
+							</div> <!--/ Main blog column end -->
+							<div class="col-md-4">
+								<!-- Blog page sidebar -->
+								<div class="blog-sidebar">
+									<div class="row">
+										
+										<div class="col-md-12 col-sm-6">
+											<!-- Blog sidebar page widget -->
+											<div class="sidebar-widget">
+												<!-- Widget Heading -->
+												<h4>相似文档</h4>
+												<!-- Recent post list -->
+												<ul class="list-unstyled">
+													{%for n in pages%}
+													<li><i class="fa fa-angle-double-right"></i> <a href="{%url 'showpage' n.id%}">{{n.title}}</a></li>
+													{%endfor%}
+													</ul>
+											</div><!--/ Widget end -->
+										</div>
+
+
+									</div><!--/ Inner row end -->
+								</div><!--/ Page sidebar end -->
+							</div>
+						</div><!--/ Row end -->
+					</div>
+				</div>
+				
+				<!-- Blog End -->
+			
+
+			</div><!-- / Inner Page Content End -->	
+			
+{%endblock%}
