@@ -1,7 +1,7 @@
 import os, sys
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "game.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "iosnew.settings")
 sys.path.append('./')
-import game.settings        
+import iosnew.settings        
 
 from game.models import TextInfo,ImgInfo
 
