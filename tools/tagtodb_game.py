@@ -18,8 +18,8 @@ print "Text have %d" % len(all_text_tag)
 for a in all_text_tag:
 	try:
 		a1 = TextInfo.objects.get(tagname=a[0])
-		a1.text = a[1]
-		a1.save()
+		#a1.text = a[1]
+		#a1.save()
 	except:
 		a1 = TextInfo(text=a[1],tagname=a[0])
 		a1.save()
@@ -32,8 +32,8 @@ print "Image have %d" % len(all_img_tag)
 for a in all_img_tag:
 	try:
 		a1 = ImgInfo.objects.get(tagname=a[0])
-		a1.image = a[1]
-		a1.save()
+		#a1.image = a[1]
+		#a1.save()
 	except:
 		a1 = ImgInfo(image=a[1],tagname=a[0])
 		a1.save()
