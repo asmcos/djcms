@@ -8,9 +8,9 @@ from .models import *
 def home(request):
 	d	   = {}
 	cates	   = Category.objects.all().order_by('-order')[:4]
-	courses	   = Course.objects.all().order_by('-order')[:4]
-	videos	   = Video.objects.all().order_by('-id')[:4]
-	hotvideos  = Video.objects.all().order_by('-count')[:4]
+	courses	   = Course.objects.all().order_by('-order')[:6]
+	videos	   = Video.objects.all().order_by('-id')[:6]
+	hotvideos  = Video.objects.all().order_by('-count')[:6]
 	d['cates']=cates
 	d['courses']=courses
 	d['videos']=videos
