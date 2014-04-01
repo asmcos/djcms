@@ -6,7 +6,7 @@ input_file = sys.argv[1]
 output_file = sys.argv[2]
 
 
-dict_file = {'game_base.html':0,'game_main.html':1000,'aboutus.html':2000,'g.html':3000,'g.html':4000,'g.html':5000}
+dict_file = {'game_base.html':0,'game_main.html':1000,'game_main_tag.html':1000,'aboutus.html':2000,'g.html':3000,'g.html':4000,'g.html':5000}
 
 buf = open(input_file).read()
 
