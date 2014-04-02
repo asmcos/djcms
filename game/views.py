@@ -75,7 +75,7 @@ def aboutus(request):
     for img in allimg:
         d[img.tagname]        = img.image
 
-    return render_to_response('game/aboutus.html',d,context_instance=RequestContext(request))
+    return render_to_response('game/aboutus_tag.html',d,context_instance=RequestContext(request))
 
 
 
