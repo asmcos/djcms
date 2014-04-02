@@ -128,7 +128,7 @@
 																	<!-- Image -->
 																	<img src={{tagimg61|default:'/static/img/dish/dish2.jpg'}} class="img-responsive" alt="" />
 																	<!-- Paragraph -->
-																	<p>{{tag78|default:"Sea nut perspicacity under omni piste natures mirror as precode consequent."}}</p>
+																	<p>Sea nut perspicacity under omni piste natures mirror as precode consequent.</p>
 																	<!-- Button -->
 																	<a href={{tag14|default:"menu.html"}} class="btn btn-danger btn-xs">{{tag15|default:"View Menu"}}</a>
 																</div>
