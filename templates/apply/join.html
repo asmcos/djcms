@@ -1,0 +1,55 @@
+
+{%extends "game/game_base_tag.html"%}
+			
+			{%block content%}
+			<!-- Banner Start -->
+			
+			
+			
+			<!-- Inner Content -->
+			<div class="inner-page padd">
+			
+				<!-- About company -->
+				<div class="about-company padd">
+					<div class="container">
+
+
+						<div class="component-content" style="width:500px;">
+							<!-- Heading -->
+							<h3>您报名的是:{{event.title}}</h3>
+							<!-- Buttons -->
+						<form action="/apply/joinsave/{{event.id}}" method="POST">
+							{%csrf_token%}
+							<div class="form-group">
+							   <input class="form-control" type="text"  name="name" placeholder="姓名(*)">
+							</div>
+							<div class="form-group">
+							   <input class="form-control" type="text"  name="email" placeholder="邮箱(*)">
+							</div>
+							<div class="form-group">
+							   <input class="form-control" type="text"  name="qq" placeholder="qq">
+							</div>
+							<div class="form-group">
+							   <input class="form-control" type="text"  name="workage" placeholder="工作年限(*)">
+							</div>
+							<div class="form-group">
+							   <input class="form-control" type="text"  name="company" placeholder="公司/学校">
+							</div>
+							<div class="form-group">
+							   <input class="form-control" type="text"  name="interest" placeholder="兴趣爱好(*)">
+							</div>
+							<button class="btn btn-success" type="sumbit" value="sumbit">报名</button>
+						</form>
+						</div>
+
+
+					</div>
+				</div>
+				
+
+			
+
+				
+			</div><!-- / Inner Page Content End -->	
+			
+{%endblock%}

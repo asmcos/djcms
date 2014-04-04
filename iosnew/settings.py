@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'jeapmain',
     'pythonvideo',
     'game',
+    'apply',
 )
 
 MIDDLEWARE_CLASSES = (

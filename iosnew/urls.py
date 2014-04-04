@@ -42,6 +42,12 @@ urlpatterns = patterns('',
     url(r'^teachers$', 'game.views.teachers', name='teachres'),
     url(r'^showpage/(\d+)$', 'game.views.showpage', name='showpage'),
     url(r'^aboutus$', 'game.views.aboutus', name='aboutus'),
+	
 
-
+    url(r'^apply/eventjoin/(\d+)$', 'apply.views.eventjoin', name='eventjoin'),
+    url(r'^apply/joinsave/(\d+)$', 'apply.views.joinsave', name='joinsave'),
+    url(r'^apply/eventadmin/(\d+)$', 'apply.views.eventadmin', name='eventadmin'),
+    url(r'^apply/confirm/(\d+)/(\d+)$', 'apply.views.confirm', name='confirm'),
+    url(r'^apply/delete/(\d+)/(\d+)$', 'apply.views.delete', name='delete'),
+    url(r'^apply/listconfirm/(\d+)$', 'apply.views.listuser', name='listuser'),
 )

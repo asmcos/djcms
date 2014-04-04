@@ -1,0 +1,33 @@
+						  <div>
+							<h3>{{event.title}} 已报名情况:</h3>
+							<div class="table-responsive">
+						
+
+
+
+
+									<table style="color: #3e5867; font-size: 13px; font-family: 'Helvetica Neue', Arial, 'Lucida Grande', 'Lucida Sans Unicode', 'Microsoft YaHei', sans-serif;" border=1>
+											<tbody><tr>
+												<th>序号</th>
+												<th>姓名</th>
+												<th>工作时间</th>
+												<th>公司</th>
+												<th>兴趣</th>
+											</tr>
+											</tbody><tbody>
+													
+												{%for n in allusers%}
+												<tr>	<td>{{forloop.counter}}</td>
+													<td>{{n.name}}</td>
+													<td>{{n.workage}}</td>
+													<td>{{n.company}}</td>
+													<td>{{n.interest}}</td>
+												</tr>
+												{%endfor%}
+											</tbody>
+										</table>
+									</div>
+							<!-- Buttons -->
+						</div>
+
+

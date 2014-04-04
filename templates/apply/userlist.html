@@ -1,0 +1,63 @@
+
+{%extends "game/game_base_tag.html"%}
+			
+			{%block content%}
+			<!-- Banner Start -->
+			
+			
+			
+			<!-- Inner Content -->
+			<div class="inner-page padd">
+			
+				<!-- About company -->
+				<div class="about-company padd">
+					<div class="container">
+
+
+						<div class="component-content">
+							<!-- Heading -->
+							<h3>{{event.title}} 已报名情况:</h3>
+							<div class="table-responsive">
+										<table class="table table-bordered">
+											<tbody><tr>
+												<th>序号</th>
+												<th>姓名</th>
+												<th>工作时间</th>
+												<th>邮件</th>
+												<th>QQ</th>
+												<th>公司</th>
+												<th>兴趣</th>
+												<th>确认</th>
+												<th>删除</th>
+											</tr>
+											</tbody><tbody>
+													
+												{%for n in allusers%}
+												<tr>	<td>{{forloop.counter}}</td>
+													<td>{{n.name}}</td>
+													<td>{{n.workage}}</td>
+													<td>{{n.email}}</td>
+													<td>{{n.qq}}</td>
+													<td>{{n.company}}</td>
+													<td>{{n.interest}}</td>
+													<td><a href="/apply/confirm/{{event.id}}/{{n.id}}">{%if n.kw == '0' %}未确认{%else%}已确认{%endif%}</td>
+													<td><a href="/apply/delete/{{event.id}}/{{n.id}}">删除</td>
+												</tr>
+												{%endfor%}
+											</tbody>
+										</table>
+									</div>
+							<!-- Buttons -->
+						</div>
+
+
+					</div>
+				</div>
+				
+
+			
+
+				
+			</div><!-- / Inner Page Content End -->	
+			
+{%endblock%}
