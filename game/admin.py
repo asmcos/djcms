@@ -5,8 +5,8 @@ from .models import TextInfo,ImgInfo,StudentsApp,Teacher,Singlepage
 
 class TextInfoAdmin(admin.ModelAdmin):
     list_display =('text','tagname',)
-    class Media:
-	js=("/static/game/js/jquery.min.js","/static/tinymce/js/tinymce/jquery.tinymce.min.js","/static/tinymce/js/tinymce/tinymce.min.js","/static/game/js/tinyedit.js",)
+    #class Media:
+	#	js=("/static/game/js/jquery.min.js","/static/tinymce/js/tinymce/jquery.tinymce.min.js","/static/tinymce/js/tinymce/tinymce.min.js","/static/game/js/tinyedit.js",)
 
 class ImgInfoAdmin(admin.ModelAdmin):
     list_display =('image_tag','tagname',)
