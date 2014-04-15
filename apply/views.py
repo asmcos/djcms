@@ -22,7 +22,7 @@ def eventjoin(request,id):
         	for text in alltext:
 			d[text.tagname]        = text.text
         	for img in allimg:
-			d[img.tagname]        = img.image
+			d[img.tagname]        = "/"+str(img.image)
 		d['event'] = event
 		return render_to_response('apply/join.html',d,context_instance=RequestContext(request))
 	except:
@@ -37,7 +37,7 @@ def joinsave(request,id):
         	for text in alltext:
 			d[text.tagname]        = text.text
         	for img in allimg:
-			d[img.tagname]        = img.image
+			d[img.tagname]        = "/" + str(img.image)
 		d['event'] = event
 		post = request.POST.copy()
 		post['eventid'] = event.id
@@ -65,7 +65,7 @@ def eventadmin(request,id):
         	for text in alltext:
 			d[text.tagname]        = text.text
         	for img in allimg:
-			d[img.tagname]        = img.image
+			d[img.tagname]        = "/"+ str(img.image)
 		d['event']    = event
 		d['allusers'] = allusers
 		print allusers
