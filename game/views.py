@@ -28,7 +28,7 @@ def home(request):  # mainpage
     for text in alltext:
 	d[text.tagname]        = text.text
     for img in allimg:
-	d[img.tagname]        = img.image
+	d[img.tagname]        = str(img.image)
 
     '''
     d1 = make_model_count(StudentsApp,6,3) 
@@ -47,7 +47,7 @@ def listpage(request):
     for text in alltext:
         d[text.tagname]        = text.text
     for img in allimg:
-        d[img.tagname]        = img.image
+	d[img.tagname]        =  "/"+str(img.image)
 
     d['projects'] = StudentsApp.objects.all()
 
@@ -60,7 +60,8 @@ def teachers(request):
     for text in alltext:
         d[text.tagname]        = text.text
     for img in allimg:
-        d[img.tagname]        = img.image
+	d[img.tagname]        =  "/"+str(img.image)
+
 
     d['teachers'] = Teacher.objects.all().order_by('-order')
 
@@ -73,7 +74,8 @@ def aboutus(request):
     for text in alltext:
         d[text.tagname]        = text.text
     for img in allimg:
-        d[img.tagname]        = img.image
+	d[img.tagname]        =  img.image
+
 
     return render_to_response('game/aboutus_tag.html',d,context_instance=RequestContext(request))
 
@@ -88,7 +90,8 @@ def showpage(request,id):
     for text in alltext:
         d[text.tagname]       = text.text
     for img in allimg:
-        d[img.tagname]        = img.image
+	d[img.tagname]        = "/"+str(img.image)
+
  
     start = int(id)-2
     if start < 0:
