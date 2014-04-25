@@ -54,9 +54,9 @@ hr{
 	border:0;
 }
 
-form label { font-weight: normal; color: #9a9a9a; }
+form label { font-weight: normal; color: #212121; }
 form select { padding-left: 7px !important }
-form select, form textarea { color: #9a9a9a !important; }
+form select, form textarea { color: #212121 !important; }
 form input[type="text"], form input[type="password"], form input[type="email"],
 form select, form textarea{ box-shadow: none !important; }
 .table-responsive { border-radius: 4px; }
@@ -358,7 +358,7 @@ table { background: #fff; }
 .header .navbar-default .navbar-nav > li ul.dropdown-md p{
 	font-size: 13px;
 	line-height: 21px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .header .navbar-default .navbar-nav > li ul.dropdown-md a.btn{ margin-top: 8px; }
@@ -401,7 +401,7 @@ table { background: #fff; }
 	margin-left: 50px;
 	font-size: 16px;
 	font-family: 'Open Sans Condensed', sans-serif;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .btn-cart-md .dropdown-menu { 
@@ -501,7 +501,7 @@ table { background: #fff; }
 	color: #cd4937;
 }
 
-.tp-caption.finewide_verysmall_white_mw { letter-spacing: 1px; color: #9a9a9a; }
+.tp-caption.finewide_verysmall_white_mw { letter-spacing: 1px; color: #212121; }
 .tp-caption.finewide_medium_white { font-size: 50px; }
 .tp-banner .tp-caption a.btn {
 	font-size: 14px;
@@ -669,7 +669,7 @@ table { background: #fff; }
 	color: #676767;
 }
 
-.dishes .dish-details p { font-size: 13px; color: #9a9a9a; }
+.dishes .dish-details p { font-size: 13px; color: #212121; }
 .dishes .dish-details a.btn { margin-top: 15px; }
 
 /*
@@ -851,7 +851,7 @@ table { background: #fff; }
 .chefs .chefs-member h3 { font-size: 20px; }
 .chefs .chefs-member span {
 	font-size: 12px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .chefs .social {
@@ -900,7 +900,7 @@ table { background: #fff; }
 .showcase .showcase-item p {
 	padding-bottom: 25px;
 	font-size: 13px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 /*
@@ -935,7 +935,7 @@ table { background: #fff; }
 	font-size: 22px; 
 	line-height: 32px;
 	font-weight: 300;
-	color: #9a9a9a;
+	color: #212121;
 	text-align: justify;
 }
 
@@ -1106,7 +1106,7 @@ div.ppt { display:none !important; }
 	font-size: 20px;
 	line-height: 32px;
 	font-weight: 300;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .about-company .about-company-item .about-company-inner { margin: 10px 0; }
@@ -1167,7 +1167,7 @@ div.ppt { display:none !important; }
 }
 
 .inner-menu .menu-list .menu-list-item span.price { font-size: 15px; line-height: 23px; font-weight: 700; }
-.inner-menu .menu-list .menu-list-item p { font-size: 13px; color: #9a9a9a; }
+.inner-menu .menu-list .menu-list-item p { font-size: 13px; color: #212121; }
 
 /*
  * Booking Page
@@ -1192,7 +1192,7 @@ div.ppt { display:none !important; }
 	border-bottom: 4px double #eee;
 }
 
-.inner-page .booking p { font-size: 13px; color: #9a9a9a; }
+.inner-page .booking p { font-size: 13px; color: #212121; }
 .inner-page .booking .booking-form form { margin-top: 15px; }
 
 /*
@@ -1209,7 +1209,7 @@ div.ppt { display:none !important; }
 .inner-page .recipe p {
 	margin-bottom: 10px;
 	font-size: 13px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .inner-page .recipe .recipe-content{
@@ -1238,7 +1238,7 @@ div.ppt { display:none !important; }
 }
 
 .inner-page .recipe .recipe-item  ul li:first-child { border-top: 0; }
-.inner-page .recipe .recipe-item  ul li span { color: #9a9a9a; }
+.inner-page .recipe .recipe-item  ul li span { color: #212121; }
 .inner-page .recipe .recipe-item  ul li i {
 	display: inline-block;
 	margin-right: 5px;
@@ -1307,7 +1307,7 @@ div.ppt { display:none !important; }
 	margin-left: 10px;
 	font-size: 13px;
 	text-align: left;
-	color: #9a9a9a; 
+	color: #212121; 
 }
 
 .inner-page .shopping-item .item-hover { 
@@ -1381,7 +1381,7 @@ div.ppt { display:none !important; }
 .inner-page .single-item p { 
 	margin-bottom: 5px;
 	font-size: 13px;
-	color: #9a9a9a; 
+	color: #212121; 
 }
 
 .inner-page .single-item  ul{
@@ -1398,7 +1398,7 @@ div.ppt { display:none !important; }
 }
 
 .inner-page .single-item  ul li:first-child { border-top: 0; }
-.inner-page .single-item  ul li span { color: #9a9a9a; }
+.inner-page .single-item  ul li span { color: #212121; }
 .inner-page .single-item  ul li i {
 	display: inline-block;
 	margin-right: 5px;
@@ -1406,7 +1406,7 @@ div.ppt { display:none !important; }
 }
 
 .inner-page .single-item  h5 { font-size: 15px; color: #8e8e8e; }
-.inner-page .single-item table.table td { color: #9a9a9a; }
+.inner-page .single-item table.table td { color: #212121; }
 .inner-page .single-item table.table tr td:first-child { font-weight: 700; color: #959595; text-align: right; }
 .inner-page .single-item form .form-group { margin-bottom: 0; }
 
@@ -1421,7 +1421,7 @@ div.ppt { display:none !important; }
 	margin-bottom: 5px;
 	padding-bottom: 6px;
 	font-size: 20px;
-	color: #9a9a9a;
+	color: #212121;
 	border-bottom: 4px double #eee;
 }
 
@@ -1444,7 +1444,7 @@ div.ppt { display:none !important; }
 	margin-left: 10px;
 	font-size: 13px;
 	line-height: 20px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .inner-page .contactus .contact-form {	
@@ -1513,7 +1513,7 @@ div.ppt { display:none !important; }
 	border-radius: 40px;
 }
 
-.inner-page .checkout .sidebar-item p { font-size: 13px; color: #9a9a9a; }
+.inner-page .checkout .sidebar-item p { font-size: 13px; color: #212121; }
 
 /*
  * 404 Error Page
@@ -1585,7 +1585,7 @@ div.ppt { display:none !important; }
 	margin-left: 270px;
 	font-size: 14px;
 	line-height: 26px;
-	color: #9a9a9a;
+	color: #212121;
 	text-align: justify;
 }
 
@@ -1676,7 +1676,7 @@ div.ppt { display:none !important; }
 	margin-left: 60px;
 	font-size: 13px;
 	line-height: 23px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 /*
@@ -1718,7 +1718,7 @@ div.ppt { display:none !important; }
 }
 
 .inner-page .nutrition .nutrition-item img { margin-bottom: 15px; }
-.inner-page .nutrition .nutrition-item p { font-size: 13px; color: #9a9a9a; }
+.inner-page .nutrition .nutrition-item p { font-size: 13px; color: #212121; }
 .inner-page .nutrition .nutrition-item .table { margin-top: 15px; }
 
 /*
@@ -1747,7 +1747,7 @@ div.ppt { display:none !important; }
 .inner-page .general .tab-content p {
 	margin-top: 10px;
 	font-size: 13px;
-	color: #9a9a9a; 
+	color: #212121; 
 }
 
 .inner-page .general .tab-content ul{ margin: 0; }
@@ -1824,7 +1824,7 @@ div.ppt { display:none !important; }
 
 .footer .footer-widget p {
 	font-size: 13px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .footer .footer-widget img.payment {
@@ -1865,7 +1865,7 @@ div.ppt { display:none !important; }
 	margin-bottom: 15px;
 	font-size: 13px;
 	line-height: 20px;
-	color: #9a9a9a;
+	color: #212121;
 }
 
 .footer .footer-widget .social { margin-top: 10px; }
@@ -1884,7 +1884,7 @@ div.ppt { display:none !important; }
  
 .footer .footer-copyright p {
 	font-size: 13px;
-	color: #9a9a9a;
+	color: #212121;
 	text-align: center;
 }
 
