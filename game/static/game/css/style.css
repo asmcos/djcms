@@ -777,7 +777,7 @@ table { background: #fff; }
 	line-height: 14px;
 	font-weight: 700;
 	color: #353535;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+	text-shadow: 0 1px 0 rgba(255,255,255,0.7);
 }
 
 .menu .menu-details ul li i {
