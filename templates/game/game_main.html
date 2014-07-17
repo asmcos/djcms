@@ -453,7 +453,7 @@
 
 			<div class="menu padd">
 			   <div class="container">
-				<div class="col-md-12 portlets ui-sortable">
+				<div class="col-md-8 portlets ui-sortable">
 
               <!-- Widget -->
               <div class="widget" style="position: relative; opacity: 1; z-index: 0;">
@@ -472,13 +472,11 @@
                     <tbody><tr>
                       <th style="width:20%;"><center>日期</center></th>
                       <th style="width:60%;">名称</th>
-                      <th style="width:20%">查看</th>
                     </tr>
 		{%for c in course5%}
                     <tr>
                       <td>{{c.kw}}
                       </td><td><a href="/showpage/{{c.id}}">{{c.title}}</a></td>
-                      <td ><span class="countred">{{c.count}}</span></td>
                     </tr>     
                 {%endfor%}                             
                   </tbody></table>
