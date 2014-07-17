@@ -447,7 +447,54 @@
 				
 				<!-- Showcase End -->
 				
-				
+
+
+				<!--recent course Start-->			
+
+			<div class="menu padd">
+			   <div class="container">
+				<div class="col-md-12 portlets ui-sortable">
+
+              <!-- Widget -->
+              <div class="widget" style="position: relative; opacity: 1; z-index: 0;">
+                <!-- Widget title -->
+                <div class="widget-head">
+                  <div class="pull-left">最近开班</div>
+                  <div class="widget-icons pull-right">
+                    <a class="wminimize"><i class="fa fa-chevron-up"></i></a> 
+                  </div>  
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget-content referrer">
+                  <!-- Widget content -->
+                  
+                  <table class="table table-striped table-bordered table-hover">
+                    <tbody><tr>
+                      <th style="width:20%;"><center>日期</center></th>
+                      <th style="width:60%;">名称</th>
+                      <th style="width:20%">查看</th>
+                    </tr>
+		{%for c in course5%}
+                    <tr>
+                      <td>{{c.kw}}
+                      </td><td><a href="/showpage/{{c.id}}">{{c.title}}</a></td>
+                      <td ><span class="countred">{{c.count}}</span></td>
+                    </tr>     
+                {%endfor%}                             
+                  </tbody></table>
+                </div>
+              </div>
+
+
+                 </div>
+              
+               </div>
+	    </div> <!--container-->	
+            </div> <!-- menu padd -->
+
+
+				<!--recent course End-->
+	
 				<!-- menu Start -->
 				
 				<div class="menu padd">

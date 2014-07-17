@@ -30,6 +30,10 @@ def home(request):  # mainpage
     for img in allimg:
 	d[img.tagname]        = str(img.image)
 
+
+    course5 = Singlepage.objects.filter(order__gte = 10000).order_by('order')[0:5]	
+    d['course5']=course5
+
     '''
     d1 = make_model_count(StudentsApp,6,3) 
     d.update(d1)
@@ -99,6 +103,7 @@ def showpage(request,id):
     d['pages'] = Singlepage.objects.filter()[start:int(id)+2]
     try:
     	d['page'] = Singlepage.objects.get(id=id)
+	d['page'].count += 1
     except:
 	d['page'] = 'Page Not Found'
 
