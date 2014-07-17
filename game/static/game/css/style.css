@@ -965,7 +965,7 @@ table { background: #fff; }
 .testimonial .flexslider-recent ul li{ position: relative; }
 .testimonial .flexslider-recent li .slider-content{
 	position: absolute;
-	width: 100%;
+	width: 93%;
 	bottom: 0px;
 	padding: 10px 15px;
 	background: rgba(0,0,0,0.2);
