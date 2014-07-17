@@ -104,6 +104,7 @@ def showpage(request,id):
     try:
     	d['page'] = Singlepage.objects.get(id=id)
 	d['page'].count += 1
+	d['page'].save()
     except:
 	d['page'] = 'Page Not Found'
 
