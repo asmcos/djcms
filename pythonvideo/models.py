@@ -3,7 +3,7 @@ from django.db import models
 
 
 class Category(models.Model):
-	image	   = models.ImageField(upload_to='./image',default="./image/defaultcate.jpg")
+	image	   = models.ImageField(upload_to='./image',blank=True)
 	icon	   = models.CharField(max_length=64)
 	count      = models.IntegerField(default=0)
 	title      = models.CharField(max_length=256)
@@ -17,13 +17,22 @@ class Course(models.Model):
 	title      = models.CharField( max_length=256)
 	count      = models.IntegerField(default=0)
 	intro      = models.CharField( max_length=1024,default='课程')
-	image	   = models.ImageField(upload_to='./image',default="./image/defaultcourse.jpg")
+	image	   = models.ImageField(upload_to='./image',blank=True)
 	cateid     = models.ForeignKey(Category)
 	createdate = models.DateField(auto_now=True)
 	order      = models.IntegerField(default=0)
 	kw	   = models.CharField(max_length=64,default="open")
 	def __unicode__(self):
 		return self.title
+	@property
+	def get_image(self):
+		if self.image:
+			return self.image
+		else:
+			image = ImgInfo.objects.filter(tagname='default_course').order_by("?")
+			if len(image):
+				return image[0].image
+			return ""
 
 class Video(models.Model):
 	title      = models.CharField( max_length=256)
@@ -31,11 +40,20 @@ class Video(models.Model):
 	count      = models.IntegerField(default=0)
 	content    = models.TextField(default="视频")
 	intro      = models.CharField( max_length=1024)
-	image	   = models.ImageField(upload_to='./image',default="./image/defaultvideo.jpg")
+	image	   = models.ImageField(upload_to='./image',blank=True)
 	courseid   = models.ForeignKey(Course)
 	createdate = models.DateField(auto_now=True)
 	order      = models.IntegerField(default=0)
 	kw	   = models.CharField(max_length=64,default="open")
+        @property
+        def get_image(self):
+                if self.image:
+                        return self.image
+                else:
+                        image = ImgInfo.objects.filter(tagname='default_video').order_by("?")
+                        if len(image):
+                                return image[0].image
+                        return ""
 
 
 
