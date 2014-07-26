@@ -29,7 +29,7 @@ class Course(models.Model):
 		if self.image:
 			return self.image
 		else:
-			image = ImgInfo.objects.filter(tagname='default_course').order_by("?")
+			image = ImgInfo.objects.filter(tagname='defaultcourse').order_by("?")
 			if len(image):
 				return image[0].image
 			return ""
@@ -50,7 +50,7 @@ class Video(models.Model):
                 if self.image:
                         return self.image
                 else:
-                        image = ImgInfo.objects.filter(tagname='default_video').order_by("?")
+                        image = ImgInfo.objects.filter(tagname='defaultvideo').order_by("?")
                         if len(image):
                                 return image[0].image
                         return ""
