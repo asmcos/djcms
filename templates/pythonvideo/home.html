@@ -363,5 +363,47 @@ Image"></div>
 
             <!-- /#our-clients -->
            
+            <section id="our-clients" class="section">
+                <div class="container wrapper-1">
+                    <h5 class="subpage-title">
+                        <span>{[最新视频]}</span>
+                        <!-- Controls -->
+			<a href=/videos class="prev black disabled" style="width:92px;height:30px; " target=_blank>点击更多</a>
+			{%for v in videos%}
+                       <div class="m-cpic" style="color: #666666; font-size: 12px; font-family: 微软雅黑, 宋体, 黑体; ">
+
+			<a style="color: #00848e;" title="" href=""><img  src="{{v.get_image}}" alt="" width="300px" height="300px" /></a>
+  
+    
+    
+    			<div class="course_info" style="color: #666666; font-size: 12px; font-family: 微软雅黑, 宋体, 黑体; ">
+  
+			<h2 style="color: #1c130c; font-size: 22px; font-family: 'microsoft yahei';">{{v.title}}</h2>
+
+			<p><strong style="color: #1c130c;font-size: 22px;">授课老师：</strong>何家胜</p>
+			<p><strong style="color: #1c130c;">课程简介：</strong>{{v.intro}}</p>
+
+     <div class="u-cshare">
+
+       			<div  class="bdshare_t bds_tools get-codes-bdshare btn" style="font-size: 12px;float:right;"><a id="favorite" style="color: #6a6a6a; font-family: 宋体, Arial;" title="收藏本课程"></a></div>
+        
+
+       			<div  class="bdshare_t bds_tools get-codes-bdshare btn" style="font-size: 12px; float:right"><a style="color: #6a6a6a; font-family: 宋体, Arial;" title="课程已更新完毕"></div>
+
+<p>&nbsp;</p>
+
+</div> <!--u-cshare-->
+  
+  
+ </div> <!--course-info-->
+
+  </div> <!--m-cpic--> 
+			{%endfor%}
+
+			
+                </div>
+                <!-- /.container -->
+                    </h5>
+            </section>
            
 {%endblock%}
