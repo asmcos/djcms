@@ -6,6 +6,9 @@ class CategoryAdmin(admin.ModelAdmin):
 	list_display=('title',)
 class CourseAdmin(admin.ModelAdmin):
 	list_display=('title',)
+	class Media:
+               js=("/static/game/js/jquery.min.js","/static/tinymce/js/tinymce/jquery.tinymce.min.js","/static/tinymce/js/tinymce/tinymce.min.js","/static/game/js/tinyedit_intro.js",)
+
 class VideoAdmin(admin.ModelAdmin):
 	list_display=('title',)
 class TextInfoAdmin(admin.ModelAdmin):
