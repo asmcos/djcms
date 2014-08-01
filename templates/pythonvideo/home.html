@@ -247,44 +247,56 @@ Image"></div>
                 <!-- /.container -->
             </section>
             <!-- /#our-services -->
-<section id="recent-works" class="section">
-                <div class="container wrapper-2">
+
+            <section id="our-clients" class="section">
+                <div class="container wrapper-1">
                     <h5 class="subpage-title">
                         <span>{[课程视频]}</span>
                         <!-- Controls -->
-			<span id="portfolio-next" class="next black" style="display: block;"><i class="icon-angle-right"></i></span>
-                        <span id="portfolio-prev" class="prev black disabled" style="display: block;"><i class="icon-angle-left"></i></span>
+			<a href=/videos class="prev black disabled" style="width:92px;height:30px; " target=_blank>点击更多</a>
                     </h5>
-                    <div class="row">
-                        <div id="caroufredsel-portfolio-container">
 			{%for c in courses%}
-			<a href=/video/{{c.id}} target="view_window">
-                            <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item-wrapper">
-                                <div class="portfolio-item">
-                                    <div class="portfolio-thumb">
-                                        <img style="width:280px;height:200px;" src={{MEDIA_URL}}{{c.get_image}}>
-                                        <div class="image-overlay"></div>
-                                        <a href="[{static/img/portfolio/photo (1).jpg}]" rel="prettyPhoto[pp_gal]"></a>
-                                        <a href="portfolio-item-1.html" ></a>
-                                    </div>
-                                    <div class="portfolio-content">
-                                        <h5>{{c.title}}</h5>
-                                        <p>{{c.intro}}</p>
-                                    </div>
-                                </div>
-                            </div>
-			</a>
-			{%endfor%}
-                            <!-- /.portfolio-item-wrapper -->
+                       <div class="m-cpic" style="color: #666666; font-size: 12px; font-family: 微软雅黑, 宋体, 黑体; ">
 
-                        </div>
-                        <!-- /.caroufredsel-portfolio-container -->
-                    </div>
-                    <!-- /.row -->
+			<a  class="aimg" style="color: #00848e;" title="" href=/video/{{c.id}} ><img  src="{{c.get_image}}" alt="" width="280px" height="200px" style="margin-top:15%;" /></a>
+  
+    
+    
+    			<div class="course_info" style="color: #666666; font-size: 12px; font-family: 微软雅黑, 宋体, 黑体; ">
+  
+			<h2 style="color: #1c130c; font-size: 22px; font-family: 'microsoft yahei';"><a href=/video/{{c.id}} target="view_window">{{c.title}}</a></h2>
+
+			{{c.intro|safe}}
+			<!--p><strong style="color: #1c130c;">课程简介：</strong>{{c.intro}}</p-->
+
+     <div class="u-cshare">
+
+       			<div  class="bdshare_t bds_tools get-codes-bdshare btn" style="font-size: 12px;float:right;"><a id="favorite" style="color: #6a6a6a; font-family: 宋体, Arial;" title="收藏本课程"></a></div>
+        
+
+       			<div  class="bdshare_t bds_tools get-codes-bdshare btn" style="font-size: 12px; float:right"><a style="color: #6a6a6a; font-family: 宋体, Arial;" title="课程已更新完毕"></div>
+
+<p>&nbsp;</p>
+
+</div> <!--u-cshare-->
+  
+  
+ </div> <!--course-info-->
+
+  </div> <!--m-cpic--> 
+			{%endfor%}
+
+			
                 </div>
                 <!-- /.container -->
             </section>
-	<!-- /#recent-works -->
+ 
+
+
+
+
+
+
             
             <!-- /#awesome-callout -->
 <section id="recent-works" class="section">
@@ -363,47 +375,5 @@ Image"></div>
 
             <!-- /#our-clients -->
            
-            <section id="our-clients" class="section">
-                <div class="container wrapper-1">
-                    <h5 class="subpage-title">
-                        <span>最新视频</span>
-                        <!-- Controls -->
-			<a href=/videos class="prev black disabled" style="width:92px;height:30px; " target=_blank>点击更多</a>
-                    </h5>
-			{%for c in courses%}
-                       <div class="m-cpic" style="color: #666666; font-size: 12px; font-family: 微软雅黑, 宋体, 黑体; ">
-
-			<a  class="aimg" style="color: #00848e;" title="" href=/video/{{c.id}} ><img  src="{{c.get_image}}" alt="" width="280px" height="200px" style="margin-top:15%;" /></a>
-  
-    
-    
-    			<div class="course_info" style="color: #666666; font-size: 12px; font-family: 微软雅黑, 宋体, 黑体; ">
-  
-			<h2 style="color: #1c130c; font-size: 22px; font-family: 'microsoft yahei';"><a href=/video/{{c.id}} target="view_window">{{c.title}}</a></h2>
-
-			{{c.intro|safe}}
-			<!--p><strong style="color: #1c130c;">课程简介：</strong>{{c.intro}}</p-->
-
-     <div class="u-cshare">
-
-       			<div  class="bdshare_t bds_tools get-codes-bdshare btn" style="font-size: 12px;float:right;"><a id="favorite" style="color: #6a6a6a; font-family: 宋体, Arial;" title="收藏本课程"></a></div>
-        
-
-       			<div  class="bdshare_t bds_tools get-codes-bdshare btn" style="font-size: 12px; float:right"><a style="color: #6a6a6a; font-family: 宋体, Arial;" title="课程已更新完毕"></div>
-
-<p>&nbsp;</p>
-
-</div> <!--u-cshare-->
-  
-  
- </div> <!--course-info-->
-
-  </div> <!--m-cpic--> 
-			{%endfor%}
-
-			
-                </div>
-                <!-- /.container -->
-            </section>
-           
+          
 {%endblock%}
