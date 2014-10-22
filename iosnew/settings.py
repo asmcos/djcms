@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'pythonvideo',
     'game',
     'apply',
+    'android',
 )
 
 MIDDLEWARE_CLASSES = (

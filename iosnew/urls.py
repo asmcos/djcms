@@ -29,6 +29,7 @@ urlpatterns = patterns('',
 
     url(r'^jeapmain$', 'jeapmain.views.home'),
 
+    url(r'^android$', 'android.views.mainpage'),
 
     url(r'^pythonvideo$', 'pythonvideo.views.home', name='home'),
     url(r'^cates$','pythonvideo.views.cates',name='cates'),
